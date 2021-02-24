@@ -13,6 +13,13 @@
 		2E2BD2DD25DE4E0500466628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2BD2DB25DE4E0500466628 /* Main.storyboard */; };
 		2E2BD2DF25DE4E0A00466628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2BD2DE25DE4E0A00466628 /* Assets.xcassets */; };
 		2E2BD2E225DE4E0A00466628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2BD2E025DE4E0A00466628 /* LaunchScreen.storyboard */; };
+		2E2BD2EA25DE4EC800466628 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2E925DE4EC800466628 /* CustomView.swift */; };
+		2E2BD2EC25E01C3800466628 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2EB25E01C3800466628 /* Circle.swift */; };
+		2E2BD2EE25E01C5400466628 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2ED25E01C5400466628 /* Rectangle.swift */; };
+		2E2BD2F225E03F9000466628 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2F125E03F9000466628 /* Line.swift */; };
+		2E2BD2F425E0419900466628 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2F325E0419900466628 /* Triangle.swift */; };
+		2E2BD2F625E050AF00466628 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2F525E050AF00466628 /* Pencil.swift */; };
+		2E2BD2F825E064E600466628 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2BD2F725E064E600466628 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		2E2BD2DE25DE4E0A00466628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2BD2E125DE4E0A00466628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E2BD2E325DE4E0A00466628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E2BD2E925DE4EC800466628 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		2E2BD2EB25E01C3800466628 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
+		2E2BD2ED25E01C5400466628 /* Rectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		2E2BD2F125E03F9000466628 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		2E2BD2F325E0419900466628 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		2E2BD2F525E050AF00466628 /* Pencil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
+		2E2BD2F725E064E600466628 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +71,29 @@
 			isa = PBXGroup;
 			children = (
 				2E2BD2D525DE4E0500466628 /* AppDelegate.swift */,
-				2E2BD2D725DE4E0500466628 /* SceneDelegate.swift */,
-				2E2BD2D925DE4E0500466628 /* ViewController.swift */,
-				2E2BD2DB25DE4E0500466628 /* Main.storyboard */,
 				2E2BD2DE25DE4E0A00466628 /* Assets.xcassets */,
 				2E2BD2E025DE4E0A00466628 /* LaunchScreen.storyboard */,
 				2E2BD2E325DE4E0A00466628 /* Info.plist */,
+				2E2BD2D725DE4E0500466628 /* SceneDelegate.swift */,
+				2E2BD2D925DE4E0500466628 /* ViewController.swift */,
+				2E2BD2E925DE4EC800466628 /* CustomView.swift */,
+				2E2BD2DB25DE4E0500466628 /* Main.storyboard */,
+				2E2BD2EB25E01C3800466628 /* Circle.swift */,
+				2E2BD2ED25E01C5400466628 /* Rectangle.swift */,
+				2E2BD2F125E03F9000466628 /* Line.swift */,
+				2E2BD2F325E0419900466628 /* Triangle.swift */,
+				2E2BD2F525E050AF00466628 /* Pencil.swift */,
+				2E2BD2F725E064E600466628 /* Shape.swift */,
+				2E2BD2F925E0C46A00466628 /* Model */,
 			);
 			path = Lab3;
+			sourceTree = "<group>";
+		};
+		2E2BD2F925E0C46A00466628 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2BD2EC25E01C3800466628 /* Circle.swift in Sources */,
 				2E2BD2DA25DE4E0500466628 /* ViewController.swift in Sources */,
+				2E2BD2EA25DE4EC800466628 /* CustomView.swift in Sources */,
+				2E2BD2EE25E01C5400466628 /* Rectangle.swift in Sources */,
 				2E2BD2D625DE4E0500466628 /* AppDelegate.swift in Sources */,
+				2E2BD2F825E064E600466628 /* Shape.swift in Sources */,
+				2E2BD2F625E050AF00466628 /* Pencil.swift in Sources */,
+				2E2BD2F225E03F9000466628 /* Line.swift in Sources */,
 				2E2BD2D825DE4E0500466628 /* SceneDelegate.swift in Sources */,
+				2E2BD2F425E0419900466628 /* Triangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
